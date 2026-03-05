@@ -1,7 +1,7 @@
 from transformers import pipeline
 from datasets import load_dataset
 from PIL import Image, ImageDraw
-import cv2
+import cv2 # you should download this
 import numpy as np
 
 detector = pipeline("zero-shot-object-detection", model="google/owlvit-base-patch32")
