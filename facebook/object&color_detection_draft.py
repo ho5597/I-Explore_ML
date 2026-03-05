@@ -40,7 +40,6 @@ for result in results:
         green_pixels = cv2.countNonZero(green_mask)
         red_pixels = cv2.countNonZero(red_mask)
         
-        # 5. 최종 판별
         if green_pixels > red_pixels and green_pixels > 10: # 최소 픽셀 수(노이즈 방지)
             current_color = "Green Light (Safe to cross)"
             outline_color = "green"
