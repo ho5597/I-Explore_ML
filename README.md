@@ -53,6 +53,12 @@ If anything related to the model breaks (missing weights, corrupted files, or pi
 owlvit-base-patch32/
 ```
 
+Then in 'model_download.py', change the last line from 'pass' to:
+
+```bash
+download_model()
+```
+
 Then re-download the model by running:
 
 ```bash
@@ -66,6 +72,8 @@ python3 model_download.py
 ```
 
 This restores a clean local copy of OwlViT.
+
+When not in use, make sure the last line is kept at `pass` to avoid unnecessary attempts of downloading the model.
 
 ---
 
